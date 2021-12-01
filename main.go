@@ -10,8 +10,9 @@ import (
 
 // global variables
 var (
-	user string
-    users []string // declare as a slice
+	user  string
+	users []string // declare as a slice
+
 )
 
 func main() {
@@ -27,8 +28,8 @@ func main() {
 		os.Exit(1)
 	}
 
-    // declare := is for declaration + assignment, whereas = is for assignment only.
-    // users := strings.Split(user, ",") 
+	// declare := is for declaration + assignment, whereas = is for assignment only.
+	// users := strings.Split(user, ",")
 	users = strings.Split(user, ",") // see global variables
 	fmt.Printf("Searching user(s): %s\n", users)
 }
